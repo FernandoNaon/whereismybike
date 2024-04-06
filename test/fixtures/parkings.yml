@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  geography: 
+  start_time: 2024-04-06 13:10:54
+  end_time: 2024-04-06 13:10:54
+  is_parked: false
+  comment: MyText
+
+two:
+  user: two
+  geography: 
+  start_time: 2024-04-06 13:10:54
+  end_time: 2024-04-06 13:10:54
+  is_parked: false
+  comment: MyText
