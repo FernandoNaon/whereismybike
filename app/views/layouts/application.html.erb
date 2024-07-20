@@ -6,19 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application" %>
     <%= vite_client_tag %>
-    <%= vite_javascript_tag 'application.jsx' %>
-    <!--
-      If using a TypeScript entrypoint file:
-        vite_typescript_tag 'application'
-
-      If using a .jsx or .tsx entrypoint, add the extension:
-        vite_javascript_tag 'application.jsx'
-
-      Visit the guide for more information: https://vite-ruby.netlify.app/guide/rails
-    -->
-
+    <%= vite_javascript_tag 'application.tsx' %>
+    <%= vite_stylesheet_tag 'application.scss' %>
   </head>
 
   <body>
@@ -27,7 +17,6 @@
 
       <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
       <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-      <%= link_to "Sign Out",   destroy_user_session_path, method: :delete, class: "navbar-link" %>
     <% else %>
       <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
       <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>

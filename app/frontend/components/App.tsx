@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import MapContainer from "./MapContainer";
+type Props = {};
 
-const App = () => {
+
+const App: React.FC<Props> = () => {
   return (
-    <div>
-      Hello I am the App.jsx
+    <div className="container">
+      <h1>Where is my bike?</h1>
+      <MapContainer />
     </div>
   );
 };
